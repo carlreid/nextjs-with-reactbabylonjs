@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const withTM = require('next-transpile-modules')(['@babylonjs/core', '@babylonjs/gui', 'react-babylonjs'])
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true'
 })
@@ -28,4 +27,4 @@ const nextConfig = {
   }
 }
 
-module.exports = withPlugins([withBundleAnalyzer, withTM], nextConfig)
+module.exports = withPlugins([withBundleAnalyzer], nextConfig)
